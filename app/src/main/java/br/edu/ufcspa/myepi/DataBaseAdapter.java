@@ -1,5 +1,4 @@
-
-package br.edu.ufcspa.snorlax_angelo.database;
+package br.edu.ufcspa.myepi;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -21,9 +20,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import br.edu.ufcspa.snorlax_angelo.model.RecordedFiles;
-import br.edu.ufcspa.snorlax_angelo.model.Recording;
-import br.edu.ufcspa.snorlax_angelo.model.User;
+import br.edu.ufcspa.myepi.DataBase;
 
 
 /**
@@ -43,7 +40,7 @@ public class DataBaseAdapter {
     private static String TB_RECORDED_FILES="recorded_files";
 
     private DataBaseAdapter(Context ctx) {
-        helper = DataBase.getInstance(ctx);
+        helper = br.edu.ufcspa.myepi.DataBase.getInstance(ctx);
         db = helper.getDatabase();
         context = ctx;
     }
@@ -76,7 +73,10 @@ public class DataBaseAdapter {
         return r;
     }
 
-    public void insertUser(User user) {
+
+
+
+    /*public void insertUser(User user) {
             ContentValues cv = new ContentValues();
             cv.put("id_user", user.getIdUser());
             cv.put("id_user_google", user.getId_user_google());
@@ -238,7 +238,7 @@ public class DataBaseAdapter {
 
 
 
-
+*/
 
 
 

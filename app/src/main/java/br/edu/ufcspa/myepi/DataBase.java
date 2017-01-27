@@ -1,4 +1,4 @@
-package br.edu.ufcspa.snorlax_angelo.database;
+package br.edu.ufcspa.myepi;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -18,13 +18,13 @@ public class DataBase extends SQLiteOpenHelper {
      * Este é o endereço onde o android salva os bancos de dados criado pela aplicação,
      * /data/data/<namespace da aplicacao>/databases/
      */
-    private static String DBPATH = "/data/data/br.edu.ufcspa.snorlax_angelo/databases/";
+    private static String DBPATH = "/data/data/br.edu.ufcspa.myepi/databases/";
     private static DataBase mInstance = null;
 
     // Este é o nome do banco de dados que iremos utilizar
     //private static String DBNAME = "folio.sqlite"; //Classe SplashActivity => LoginActivity2
     //private static String DBNAME ="json.sqlite";
-    private static String DBNAME = "mysleep_alpha.sqlite";
+    private static String DBNAME = "myepi_database.sqlite";
     //private static String DBNAME = "db_portfolio_alpha_ambiente_teste.sqlite";
 
     private Context context;
