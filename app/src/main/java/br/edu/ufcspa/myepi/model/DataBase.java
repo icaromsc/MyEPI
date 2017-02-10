@@ -1,4 +1,4 @@
-package br.edu.ufcspa.myepi;
+package br.edu.ufcspa.myepi.model;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

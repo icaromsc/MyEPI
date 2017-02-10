@@ -1,26 +1,8 @@
-package br.edu.ufcspa.myepi;
+package br.edu.ufcspa.myepi.model;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteConstraintException;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.Environment;
-import android.util.Log;
-
-import java.io.File;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-
-import br.edu.ufcspa.myepi.DataBase;
 
 
 /**
@@ -40,7 +22,7 @@ public class DataBaseAdapter {
     private static String TB_RECORDED_FILES="recorded_files";
 
     private DataBaseAdapter(Context ctx) {
-        helper = br.edu.ufcspa.myepi.DataBase.getInstance(ctx);
+        helper = DataBase.getInstance(ctx);
         db = helper.getDatabase();
         context = ctx;
     }
